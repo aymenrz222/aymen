@@ -1,0 +1,181 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+  text-align: left;
+ 
+}
+
+ 
+
+h1{
+  color:#111;
+}
+
+.sidebar {
+position: fixed;
+top: 0;
+left: 0;
+width: 200px;
+height: 100%;
+background-color: #3b3b3b;
+color: #fff;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #111;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.content {
+margin-left: 200px;
+padding: 20px;
+}
+
+.search-container {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+font-size: 16px;
+width: 15%;
+box-sizing: border-box;
+}
+
+.table-container {
+border-radius: 5px;
+overflow: hidden;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-container table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.pagination {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.pagination button {
+background-color: #0b8b4f;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+margin-right: 10px;
+}
+
+.pagination button:last-child {
+margin-right: 0;
+}
+
+.pagination button:hover {
+background-color: #023b1f;
+}
+label{
+ font-weight: bold;
+
+}
+button{
+  background-color: #1a71ed;
+  color: #f7f2f2;
+  border: none;
+  border-radius: 18px;
+  padding: 3px 12px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 17px;
+
+}
+button:hover {
+  background-color: #020724;
+}
+input{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 15%;
+  box-sizing: border-box;
+
+}
+.view-icon, .edit-icon, .delete-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.view-icon:hover, .edit-icon:hover, .delete-icon:hover {
+  background-color: #0056b3;
+}
+
+.view-icon i, .edit-icon i, .delete-icon i {
+  font-size: 12px;
+}
+
+.button-container {
+  text-align: center; /* Centrer le contenu */
+}
+
+#addButton {
+  background-color: #4CAF50; /* Couleur de fond */
+  border: none; /* Supprime la bordure */
+  color: white; /* Couleur du texte */
+  padding: 15px 32px; /* Espacement interne */
+  text-align: center; /* Alignement du texte */
+  text-decoration: none; /* Supprime les décorations de texte */
+  display: inline-block; /* Affichage en ligne */
+  font-size: 16px; /* Taille de police */
+  margin: 4px 2px; /* Marge externe */
+  cursor: pointer; /* Curseur pointeur */
+  border-radius: 10px; /* Bordure arrondie */
+}
+
+#addButton:hover {
+  background-color: #45a049; /* Couleur de fond au survol */
+}
+/* Style de la popup modale */
+/* Style de la boîte de dialogue modale */

@@ -1,0 +1,47 @@
+
+<div class="content">
+    <h1>Registre des employés</h1>
+    <div class="container">
+      <input type="text" [(ngModel)]="searchQuery" placeholder="Search employees...">
+      <button (click)="searchEmployee(searchQuery)">Search</button>
+      </div> 
+     
+    
+
+    <form [formGroup]="newEmployeeForm" (ngSubmit)="addEmployee()">
+        <input type="text" id="nameInput" placeholder="Nom" formControlName="name">
+        <input type="text" id="firstNameInput" placeholder="Prenom" formControlName="firstName">
+        <input type="text" id="cinInput" placeholder="Num cin" formControlName="cin">
+        <button type="submit" id="addButton">Ajouter</button><br><br>
+    </form>
+    <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Num cin</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees">
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.firstName }}</td>
+            <td>{{ employee.cin }}</td>
+            <td>
+              <button (click)="employee.actions[0].callback(employee)">View</button>
+              <button (click)="employee.actions[1].callback(employee)">Edit</button>
+              <button (click)="employee.actions[2].callback(employee)">Delete</button>
+            </td>
+          </tr>
+        
+        </tbody>
+      </table>
+  <!-- Autres éléments HTML... -->
+<app-pop-up *ngIf="openpopup"></app-pop-up>
+
+ 
+<!-- Autres éléments HTML... -->
+
+    
+  </div>
