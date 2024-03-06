@@ -16,7 +16,8 @@ import{ FormGroup , FormControl , Validators } from '@angular/forms' ;
     currentPage: number = 1;
     pageSize: number = 5;
     currentEmployees: any[5] = [5];
-    openpopup:boolean =false;  
+    openpopup:boolean =false; 
+    employeer:any 
 
     constructor() {
       this.newEmployeeForm = new FormGroup({
@@ -64,10 +65,15 @@ import{ FormGroup , FormControl , Validators } from '@angular/forms' ;
       }
     }
     
-  
+    ViewEmployer(employee : any){
+
+      this.employeer = employee
+      this.openpopup =true;
+    }
+
     viewEmployee(employee: {name: string, firstName: string, cin:string}): void {
      /* const confirmation = confirm(`View employee ${employee.name} ${employee.firstName} with CIN ${employee.cin}?`);*/
-      this.openpopup =true;
+     
      /* if (confirmation) {
         const message = `Nom: ${employee.name}\nPrénom: ${employee.firstName}\nCIN: ${employee.cin}`;
         alert(message);

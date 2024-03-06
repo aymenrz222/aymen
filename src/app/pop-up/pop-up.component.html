@@ -1,11 +1,31 @@
-<div class="modal" id="modelpopup">
-    <div class="modal-content">
-      <span class="close" (click)="closeModal()">Close</span>
-      <p *ngIf="employee">
-        Nom: {{ employee.name }}<br>
-        Prénom: {{ employee.firstName }}<br>
-        CIN: {{ employee.cin }}
-      </p>
+<!-- <div class="back-layer">
+    <div class="section">
+      <div class="modal-content">
+        <span class="close" (click)="closeModal()">Close</span>
+        <div #container class="container" *ngIf="employee">
+          <span>Nom: {{ employee.name }}</span>
+          <span>Prénom: {{ employee.firstName }}</span>
+          <span>CIN: {{ employee.cin }}</span>
+        </div>
+      </div>
+
     </div>
+</div> -->
+
+<div class ="back-layer">
+
+  <div class="section">
+      <div  #container class="container">
+          <div class="title">
+              <!-- <span class="icon-close" (click)="closeModal()">Close</span> -->
+              <span class="subtitle"> popup </span>
+          </div>
+          <div >
+          <p>Nom: {{ employeer.name }}</p>
+          <p>Prénom: {{ employeer.firstName }}</p>
+          <p>CIN: {{ employeer.cin }}</p>
+          </div>
+      </div>
   </div>
-  
+
+</div>

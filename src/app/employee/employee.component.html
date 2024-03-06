@@ -29,7 +29,7 @@
             <td>{{ employee.firstName }}</td>
             <td>{{ employee.cin }}</td>
             <td>
-              <button (click)="employee.actions[0].callback(employee)">View</button>
+              <button (click)="ViewEmployer(employee)">View</button>
               <button (click)="employee.actions[1].callback(employee)">Edit</button>
               <button (click)="employee.actions[2].callback(employee)">Delete</button>
             </td>
@@ -38,7 +38,7 @@
         </tbody>
       </table>
   <!-- Autres éléments HTML... -->
-<app-pop-up *ngIf="openpopup"></app-pop-up>
+<app-pop-up *ngIf="openpopup" [employeer]="employeer" ></app-pop-up>
 
  
 <!-- Autres éléments HTML... -->

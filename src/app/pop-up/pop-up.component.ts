@@ -7,11 +7,12 @@ import { Component, Input,OnInit } from '@angular/core';
 })
 export class PopUpComponent {
   
-    @Input() employee: { name: string, firstName: string, cin: string } | null = null;
+    @Input() employeer: any;
+
 
     constructor() { }
     ngOnInit(){
-      console.log('open pop-up')
+      console.log('open pop-up' , this.employeer)
     }
     closeModal(): void {
       // Émettre un événement ou implémenter la logique pour fermer la boîte de dialogue pop-up
